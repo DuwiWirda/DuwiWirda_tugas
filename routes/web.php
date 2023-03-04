@@ -34,5 +34,9 @@ Route::get('/dashboard', function(){
 });
 Route::get('/blog', [BlogController::class, 'index']);
 
+Route::get('/home', function(){
+    return view('backend.template');
+});
+
 
 
