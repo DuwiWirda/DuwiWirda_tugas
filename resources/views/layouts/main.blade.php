@@ -28,7 +28,9 @@
         <li class="nav-item">
           <a class="nav-link {{($judul == 'About')? 'active' : ''}}" href="/about">About</a>
         </li>
-        
+        <li class="nav-item">
+          <a class="nav-link {{($judul == 'Home')? 'active' : ''}}" href="/home">Admin</a>
+        </li>
       </ul>
     </div>
   </div>

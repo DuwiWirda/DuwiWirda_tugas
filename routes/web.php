@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
@@ -33,10 +34,13 @@ Route::get('/dashboard', function(){
     ]);
 });
 Route::get('/blog', [BlogController::class, 'index']);
+Route::get('/home', [DashboardController::class, 'index']);
 
-Route::get('/home', function(){
-    return view('backend.template');
-});
+// Route::get('/home', function(){
+//     return view('backend.dashboard');
+// });
+
+
 
 
 
